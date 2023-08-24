@@ -67,7 +67,8 @@ $plugin({
     }, {
         prop: "valueBox",
         type: "switch",
-        label: "显示数值框"
+        label: "显示数值框",
+        default: true,
     }, {
         prop: "valueText",
         type: "text",
