@@ -30,7 +30,7 @@ function ini(ref) {
 }
 
 function destroy({ container }) {
-    if (container) container.gauge.destroy()
+    if (container && container.gauge) container.gauge.destroy()
 }
 
 $plugin({
@@ -200,7 +200,8 @@ $plugin({
     }, {
         prop: "animation",
         type: "switch",
-        label: "是否开启动画"
+        label: "是否开启动画",
+        default: true
     }, {
         prop: "animationRule",
         type: "select",
