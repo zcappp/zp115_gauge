@@ -5,7 +5,7 @@ module.exports = {
     mode: process.env.mode || "development",
     devtool: false,
     entry: {
-        "zp115": "./plugins/zp115_gauge.js",
+        "zp115": "./src/zp115_gauge.js",
     },
     output: {
         path: path.join(__dirname, "build/"),
